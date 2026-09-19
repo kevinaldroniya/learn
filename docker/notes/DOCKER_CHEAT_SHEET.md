@@ -18,7 +18,11 @@ docker run -d --rm -p 12345:80 -v /home/web-page:/usr/share/nginx/html --name ng
 ```docker
 docker system prune
 ```
-* This command basically will made your running container stop directly and clear your containers
+* By default it removes:
+    * Stopped containers
+    * Unused images
+    * Unused networks
+    * Unused build cache
 
 ## Docker pull example
 ```docker
